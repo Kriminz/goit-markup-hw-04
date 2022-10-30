@@ -27,8 +27,18 @@
             </nav>
 
             <div class="nav-links">
-                <a href="mailto:info@devstudio.com" class="link head">info@devstudio.com</a>
-                <a href="tel:+380961111111" class="link head">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="link head">
+                    <svg class="icon-mail">
+                        <use href="./img/icons.svg#icon-mail"></use>
+                    </svg> 
+                    info@devstudio.com
+                </a>
+                <a href="tel:+380961111111" class="link head">
+                    <svg class="icon-phone">
+                        <use href="./img/icons.svg#icon-phone"></use>
+                    </svg> 
+                    +38 096 111 11 11
+                </a>
             </div>
         </div>
     </header>
@@ -146,24 +156,36 @@
     </main>
 
     <footer class="bottom">
-        <div class="container">
-            <a class="logo second" href="#"><span class="icon">Web</span>Studio</a>
+        <div class="container loc">
+            <div>
+                <a class="logo second" href="#"><span class="icon">Web</span>Studio</a>
 
-            <address class="address">
-                <ul class="address-list">
-                    <li class="address-type">
-                        <p class="building">м. Київ, пр-т Лесі Українки, 26</p>
-                    </li>
+                <address class="address">
+                    <ul class="address-list">
+                        <li class="address-type">
+                            <p class="building">м. Київ, пр-т Лесі Українки, 26</p>
+                        </li>
 
-                    <li class="address-type">
-                        <a href="mailto:info@devstudio.com" class="link cont">info@devstudio.com</a>
-                    </li>
+                        <li class="address-type">
+                            <a href="mailto:info@devstudio.com" class="link cont">info@devstudio.com</a>
+                        </li>
 
-                    <li class="address-type">
-                        <a href="tel:+380961111111" class="link cont">+38 096 111 11 11</a>
-                    </li>
+                        <li class="address-type">
+                            <a href="tel:+380961111111" class="link cont">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="join-icons">
+                <p class="join">Приєднуйтесь</p>
+                <ul>
+                    <li class="icon-type"><a href="#" class="link-icon icon-i"></a></li>
+                    <li class="icon-type"><a href="#" class="link-icon icon-t"></a></li>
+                    <li class="icon-type"><a href="#" class="link-icon icon-f"></a></li>
+                    <li class="icon-type"><a href="#" class="link-icon icon-l"></a></li>
                 </ul>
-            </address>
+            </div>
         </div>
 
     </footer>

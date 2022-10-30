@@ -91,6 +91,20 @@ img{
     display: block;
 }
 
+.icon-mail{
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+    fill: currentColor;
+}
+
+.icon-phone{
+    width: 10px;
+    height: 16px;
+    margin-right: 5px;
+    fill: currentColor;
+}
+
 /* link */
 
 .link.nav {
@@ -137,6 +151,20 @@ img{
     text-align: center;
 }
 
+.img-overlay{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, 
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../img/backrgound.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .hero-title {
     margin: 0 237px;
     margin-bottom: 30px;
@@ -171,7 +199,7 @@ img{
     border-radius: 4px;
 }
 
-.button.hero {
+.btn-hero {
     padding: 10px 32px;
 
     font-weight: 700;
@@ -200,6 +228,13 @@ img{
     color: var(--second-color);
 }
 
+.filter-btn:hover,
+.filter-btn:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 /* filter */
 .filter-list{
     margin-bottom: 50px;
@@ -214,6 +249,35 @@ img{
 /* special */
 .section.speci{
     padding-bottom: 0;
+}
+
+.special-type::before{
+    display: block;
+    margin-bottom: 26.5px;
+
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+}
+
+.icon-antenna::before{
+    background-image: url(../img/antenna.svg);
+}
+
+.icon-clock::before{
+    background-image: url(../img/clock.svg);
+}
+
+.icon-diagram::before{
+    background-image: url(../img/diagram.svg);
+}
+
+.icon-astronaut::before{
+    background-image: url(../img/astronaut.svg);
 }
 
 .special-type + .special-type{
@@ -260,12 +324,18 @@ img{
     margin-right: 0;
 }
 
+.project:hover,
+.project:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* .project-img{
     /* margin-bottom: 20px; */
 
 
 .notes{
-    /* outline: 2px solid purple; */
     padding: 20px 24px;
     
     border-bottom: 1px solid #EEEEEE;
@@ -370,6 +440,7 @@ img{
 }
 
 .job {
+    margin-bottom: 16px;
 
     color: var(--dis-link-color);
     font-size: 16px;
@@ -378,12 +449,58 @@ img{
     letter-spacing: 0.03em;
 }
 
+.medias{
+    justify-content: center;
+}
+
+.social-media{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.social-media:nth-child(4n){
+    margin-right: 0;
+}
+
+.media{
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.clients{
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.client{
+    width: 170px;
+    height: 92px;
+    align-items: center;
+}
+
+.group-first{
+    width: 41px;
+    height: 47px
+}
+
 /* footer */
 .bottom {
     padding-bottom: 60px;
     padding-top: 60px;
 
     background-color: var(--hero-footer-bgc);
+}
+
+.loc{
+    display: flex;
 }
 
 .logo.second {
@@ -417,4 +534,61 @@ img{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.join-icons{
+    margin-left: 70px;
+    margin-top: 21px;
+}
+
+.join{
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+
+.icon-type{
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.icon-type:nth-child(4n){
+    margin-right: 0;
+}
+
+.icon-type:hover,
+.icon-type:focus{
+    background-color: var(--link-button-color);
+}
+
+.link-icon{
+    display: block;
+
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--second-color);
+}
+
+.icon-i{
+    background-image: url(../img/instagram.svg);
+}
+
+.icon-t{
+    background-image: url(../img/facebook.svg);
+}
+
+.icon-f{
+    background-image: url(../img/twitter.svg);
+}
+
+.icon-l{
+    background-image: url(../img/linkedin.svg);
 }
