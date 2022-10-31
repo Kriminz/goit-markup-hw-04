@@ -41,6 +41,11 @@ img{
     display: block;
 }
 
+svg{
+    max-height: 100%;
+    height: auto;
+}
+
 .section{
     padding: 94px 0;
 }
@@ -251,33 +256,21 @@ img{
     padding-bottom: 0;
 }
 
-.special-type::before{
-    display: block;
+.bg-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 26.5px;
 
-    content: "";
+    width: 270px;
     height: 120px;
-    background-repeat: no-repeat;
-    background-size: 70px;
-    background-position: center;
-    background-color: #f5f4fa;
+    background-color: var(--butn-team-color);
     border-radius: 4px;
 }
 
-.icon-antenna::before{
-    background-image: url(../img/antenna.svg);
-}
-
-.icon-clock::before{
-    background-image: url(../img/clock.svg);
-}
-
-.icon-diagram::before{
-    background-image: url(../img/diagram.svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../img/astronaut.svg);
+.spec-icon{
+    width: 70px;
+    height: 70px;
 }
 
 .special-type + .special-type{
@@ -451,23 +444,39 @@ img{
 
 .medias{
     justify-content: center;
+    gap: 10px;
 }
 
 .social-media{
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
+    display: flex;
 }
 
-.social-media:nth-child(4n){
-    margin-right: 0;
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    background-color:var(--second-color);
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus{
+    color: var(--butn-team-color);
+    background-color: var(--link-button-color);
 }
 
 .media{
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
+    fill: currentColor;
 }
+
+/* .social-link:hover .media,
+.social-link:focus .media{
+    fill: var(--butn-team-color);
+} */
 
 .clients{
     margin-bottom: 50px;
@@ -480,15 +489,35 @@ img{
     color: var(--main-color);
 }
 
-.client{
-    width: 170px;
-    height: 92px;
-    align-items: center;
+.client-list{
+    justify-content: center;
+    gap: 30px;
 }
 
-.group-first{
-    width: 41px;
-    height: 47px
+.client{
+    display: flex;
+}
+
+.client-company{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-company:hover,
+.client-company:focus{
+    color: var(--link-button-color);
+    border: 1px solid var(--link-button-color);
+}
+
+.company{
+    fill: currentColor;
 }
 
 /* footer */
@@ -554,41 +583,29 @@ img{
 
 .icon-type{
     margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
 }
 
 .icon-type:nth-child(4n){
     margin-right: 0;
 }
 
-.icon-type:hover,
-.icon-type:focus{
-    background-color: var(--link-button-color);
-}
-
 .link-icon{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 44px;
     height: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
     color: var(--second-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
-.icon-i{
-    background-image: url(../img/instagram.svg);
+.link-icon:hover,
+.link-icon:focus{
+    background-color: var(--link-button-color);
 }
 
-.icon-t{
-    background-image: url(../img/facebook.svg);
-}
-
-.icon-f{
-    background-image: url(../img/twitter.svg);
-}
-
-.icon-l{
-    background-image: url(../img/linkedin.svg);
+.icon{
+    fill: var(--second-color);
 }
